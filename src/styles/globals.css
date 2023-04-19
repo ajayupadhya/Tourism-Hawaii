@@ -1,27 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --green-color: #008080;
+  --dark-color: #001a1a;
+  --light-color: #e6f2f2;
+  --white-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+
+@media screen and (min-width: 1400px) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --banner-font-size: 140px;
+    --sub-headings-font-size: 24px;
+    --normal-font-size: 16px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+  :root {
+    --banner-font-size: 100px;
+    --sub-headings-font-size: 24px;
+    --normal-font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1100px) {
+  :root {
+    --banner-font-size: 80px;
+    --sub-headings-font-size: 24px;
+    --normal-font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  :root {
+    --banner-font-size: 60px;
+    --sub-headings-font-size: 24px;
+    --normal-font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    --banner-font-size: 64px;
+    --sub-headings-font-size: 24px;
+    --normal-font-size: 16px;
+  }
 }

@@ -1,0 +1,49 @@
+.highlight_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.highlight_div_container {
+  display: flex;
+
+  flex-direction: column;
+  width: 70%;
+  max-width: 1440px;
+}
+
+.highlight_div_container > h2 {
+  font-weight: 700;
+  font-size: var(--normal-font-size);
+  line-height: 20px;
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+
+.highlight_container_card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  margin: auto;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 1677px) {
+  .highlight_container_card {
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .highlight_div_container {
+
+    width: 90%;
+    
+  }
+}

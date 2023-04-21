@@ -12,8 +12,12 @@ export const getCategories = async () => {
   return data;
 };
 
-export const getActivities = async (type) => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_KEY}/activities/${type}`);
-    const data = await response.json();
-    return data;
+export const getActivities = async (type: any) => {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_KEY}/activities/${type}`
+  );
+
+  console.log(type , "api")
+  const data = await response.json();
+  return data;
 };

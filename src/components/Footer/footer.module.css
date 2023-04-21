@@ -1,0 +1,21 @@
+.footer_container{
+    width: 100%;
+    background: var(--dark-color);
+    height: 80px;
+}
+
+.footer_container >div{
+    width: 70%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    .footer_container >div{
+        width: 90%;
+       
+    }
+}

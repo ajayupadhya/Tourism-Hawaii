@@ -1,0 +1,199 @@
+.category_container_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  background-color: var(--light-color);
+  padding-bottom: 50px;
+}
+
+.category_container {
+  display: flex;
+  width: 70%;
+  max-width: 1440px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.category_container_left,
+.category_container_right {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 49%;
+  flex-direction: column;
+}
+.category_container_left > h3,
+.category_container_right > h3 {
+  font-weight: 700;
+  font-size: var(--normal-font-size);
+  line-height: 20px;
+  color: var(--black-color);
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.category_container_left_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category_container_left_data > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+  cursor: pointer;
+}
+.category_container_left_data > div > p,
+.category_container_left_data > div > img {
+  padding: 0;
+  margin: 0;
+  padding: 24px;
+}
+
+.category_container_left_data > div > p {
+  font-weight: 400;
+  font-size: var(--normal-font-size);
+  line-height: 20px;
+
+  color: var(--black-color);
+}
+
+.category_container_left_data > div > img {
+  transition: transform 0.5s;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+.category_container_left_data > div > img:hover {
+  transform: rotate(90deg);
+}
+
+.category_container_right_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+}
+
+.category_container_right_box_left {
+  padding: 24px;
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+}
+.category_container_right_box_right {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  margin: 24px;
+}
+.category_container_right_box_left > div {
+  display: flex;
+  flex-direction: column;
+}
+.category_container_right_box_left > div > h5 {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: var(--sub-headings-font-size);
+  line-height: 20px;
+  color: var(--black-color);
+}
+.category_container_right_box_left > div > p {
+  padding: 0;
+
+  font-weight: 400;
+  font-size: var(--normal-font-size);
+  line-height: 20px;
+  color: var(--black-color);
+}
+
+.category_container_right_box_left > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 40px;
+  border: 1px solid var(--green-color);
+  border-radius: 8px;
+  background-color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+
+  color: var(--green-color);
+  cursor: pointer;
+}
+
+.category_container_right_box_left > button:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.category_container_left_data > div:hover,
+.category_container_right_box:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .category_container {
+    flex-direction: column;
+  }
+  .category_container_left,
+  .category_container_right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .category_container {
+    width: 90%;
+  }
+  .category_container_right_box_right {
+    position: relative;
+    width: 74px;
+    height: 74px;
+  }
+
+  .category_container_left_data > div:hover,
+  .category_container_right_box:hover {
+    animation: none;
+    transform: none;
+    perspective: 0px;
+  }
+}

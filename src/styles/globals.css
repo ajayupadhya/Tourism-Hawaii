@@ -3,11 +3,15 @@
   --dark-color: #001a1a;
   --light-color: #e6f2f2;
   --white-color: #ffffff;
+
+}
+ 
+
+ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 
 @media screen and (min-width: 1400px) {
   :root {
@@ -44,8 +48,8 @@
 }
 @media screen and (max-width: 480px) {
   :root {
-    --banner-font-size: 64px;
-    --sub-headings-font-size: 24px;
-    --normal-font-size: 16px;
+    --banner-font-size:54px;
+    --sub-headings-font-size: 20px;
+    --normal-font-size: 14px;
   }
 }

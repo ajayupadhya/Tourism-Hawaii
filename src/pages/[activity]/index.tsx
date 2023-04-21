@@ -1,4 +1,4 @@
-import { Header, ActivityBanner, HighLights, Categories, Footer } from "../../components";
+import { Header, ActivityBanner, HighLights, Categories, Footer  , Description} from "../../components";
 import { GetServerSideProps } from "next";
 import {
   getHighlights,
@@ -21,6 +21,7 @@ export default function Home(props: Props) {
     <>
       <Header />
       <ActivityBanner banner = {props.activities}/>
+      <Description description = {props.activities}/>
       <HighLights highlight={props.highlights} />
       <Categories category={props.categories} />
       <Footer/>

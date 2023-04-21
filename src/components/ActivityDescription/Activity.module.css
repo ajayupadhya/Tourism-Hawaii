@@ -1,0 +1,30 @@
+.description_container {
+  width: 100%;
+
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.description_container_data{
+    width: 70%;
+    max-width: 1440px;
+    margin: auto;
+}
+.description_container_data > h2 {
+  font-size: 30px;
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .description_container_data{
+        width: 90%;
+        
+        margin: 100px auto 0px auto;
+    }
+    .description_container_data > h2 {
+      font-size: 24px;
+    
+    }
+}

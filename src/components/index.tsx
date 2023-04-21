@@ -5,5 +5,6 @@ import HighLights from "./Highlights";
 import Categories from "./Cateegories";
 import Footer from "./Footer";
 import ActivityBanner from "./ActivityBanner";
+import Description from "./ActivityDescription";
 
-export { Header, Banner, Card, HighLights  , Categories , Footer , ActivityBanner};
+export { Header, Banner, Card, HighLights  , Categories , Footer , ActivityBanner , Description};

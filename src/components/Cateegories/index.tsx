@@ -1,12 +1,16 @@
-import React from "react";
+import React , {useState} from "react";
 import Guide from "../../../assets/Ellipse 10.png";
 import Arrow from "../../../assets/arrow_forward.svg";
 import Image from "next/image";
 import styles from "./categories.module.css";
+
+
 interface Props {
   category: any;
 }
 const Categories: React.FC<Props> = ({ category }) => {
+  const [modal, setModal] = useState(false)
+  console.log(category)
   return (
     <div className={styles.category_container_section}>
       <div className={styles.category_container}>
@@ -38,6 +42,7 @@ const Categories: React.FC<Props> = ({ category }) => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

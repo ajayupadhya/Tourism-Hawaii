@@ -16,13 +16,13 @@ const Header = () => {
               <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href={"/"}>Surfing</Link>
+              <Link href={"/Surfing"}>Surfing</Link>
             </li>
             <li>
-              <Link href={"/"}>Hula</Link>
+              <Link href={"/Traditional Festivals"}>Traditional Festivals</Link>
             </li>
             <li>
-              <Link href={"/"}>Vulcano</Link>
+              <Link href={"/Volcanoes"}>Volcanoes</Link>
             </li>
           </ul>
         </nav>
